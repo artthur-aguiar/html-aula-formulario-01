@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Atividade-01</title>
+    <script>
+      function send() {
+        alert("Dados enviados!");
+      }
+    </script>    
+  </head>
+  <body bgcolor="black" text="white">
+    <header>
+      <div style="display: flex; justify-content: space-around;">
+        <h1> Ficha de Contato </h1>
+      </div>
+    </header>
+    <main>
+      <div style="display: flex; justify-content: center; margin-top: 5%; padding: 2%; 
+                  border-color: white; border-style: dotted ; border-width: 1px;">
+        
+        <form action="./teste-post.html" method="post">
+          <label for="name"> Nome: </label><br> 
+          <input type="text" name="nome" id="name" placeholder="Digite seu nome..." required>
+          <br><br>
+
+          <label for="age"> Idade: </label><br>
+          <input type="number" min="08" max="18" name="idade" id="age" required>
+          <br><br>
+
+          <label for="date"> Data de nascimento: </label><br>
+          <input type="date" name="data" id="date">
+          <br><br>
+
+          <label for="number"> Telefone: </label><br>
+          <input type="tel" name="numero" id="number" placeholder="Apenas os 9 números" required>
+          <br><br>
+
+          <input type="submit" value="Enviar" onclick="send()">
+
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
